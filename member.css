@@ -1,0 +1,422 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: gainsboro;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+
+
+.header_1{
+    color:red;
+    background: grey;
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    z-index: 20;
+    
+    
+}
+
+
+
+
+.header_1 p::after{
+    content:"WE SHIP WORLDWIDE" ;
+    animation: animate infinite 5s;
+}
+@keyframes animate{
+    0%{
+        content: "15% SHIPPING OFF ALL TENT";
+    }
+}
+.header_2{
+    
+   
+    
+    background-color: white;
+    height: fit-content;
+    position: fixed;
+    
+    width: 100%;
+    top:5%;
+    z-index: 20;
+    box-shadow: 0 7px #E8E6E6;
+}
+.header_2>div{
+    margin-left: 2em;
+   
+    color: #fff;
+    font-size: 40px;
+    height: fit-content;
+    display: flex;
+    background: #fff;
+   
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    height: 10vh;
+    
+   
+    
+}
+.header_2>div{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    
+    
+    width: 100%;
+    
+}
+nav>ul{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    
+    width: 40vw;
+
+}
+nav{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+    
+.header_2{
+    display: flex;
+    justify-content: space-between;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul>li:nth-child(2){
+    position: relative;
+}
+nav>ul>li:nth-child(2)>ul{
+    display: none;
+    position: absolute;
+    background: inherit;
+    color: gray;
+    flex-direction: column;
+    top: 1em;
+    white-space: nowrap;
+    padding: .5em;
+    
+}
+.login{
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.5em;
+    width: 4vw;
+}
+
+.box{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    
+}  
+.box p{
+
+    color: #fff;
+    position: absolute;
+    left: 30%;
+   
+    
+    
+    
+    
+}
+.box>div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    
+}
+nav>ul>li:nth-child(2):hover ul{
+   
+    background: #fff;
+    color: grey;
+   
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+nav>ul>li:nth-child(2)>ul>li:hover a{
+    cursor: pointer;
+    color: #000;
+}
+nav>ul>li:hover>a{
+    color: #000;
+}
+nav>ul>li span{
+    color: #000;
+    font-weight: bold;
+}
+.first_section>div{
+    margin-left: 5em;
+    margin-right: 5em;
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+}
+.first_section1{
+    display: flex;
+    
+    width: 15vw;
+    justify-content: space-between;
+}
+.first_section{
+    margin-top: 8em;
+    position: relative;
+}
+.second_section{
+    display: flex;
+    position: relative;
+}
+.search{
+    position: relative;
+    
+    display: flex;
+    
+}
+.search img{
+    position: absolute;
+
+}
+.search p{
+    position: absolute;
+    right: 0;
+    top: 0%;
+}
+.six{
+    position: absolute;
+    right: 2%;
+}
+.third_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.third_section button{
+    background-color: red;
+}
+.third_section>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.third_section>div>p:first-child{
+    font-size: 24px;
+    font-style: bold;
+
+}
+.third_section span{
+    display: block;
+    padding-left: 8em;
+}
+footer{
+    background-image: url("image/footer_1.webp");
+    margin-top: 2em;
+    height: fit-content;
+    
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    display: grid;
+    grid-row-gap: .09em;
+    
+    
+    
+   
+   
+    
+    
+    
+}
+footer>div>:first-child{
+    margin: 2em;
+}
+footer>div:last-child{
+    color: #fff;
+    
+    height: fit-content;
+    
+}
+footer>div:last-child p{
+    padding-left: 40%;
+    font-size: 24px;
+    
+}
+
+
+footer>div{
+   
+    
+   
+    
+   
+
+    
+    
+    
+    
+}
+
+.footer_cointainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    height: fit-content;
+    width: 100%;
+
+    
+}
+.first_footer>p:first-child{
+    
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 24px;
+    
+    
+    
+    
+}
+.first_footer>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: .5em;
+    
+}
+.lastfoot1{}
+
+.first_footer label{
+    position: absolute;
+    
+    bottom: 0%;
+    right: 0%;
+    width: fit-content;
+    background-color: #fff;
+    display: none;
+    color: #000;
+    
+
+}
+input[type=email]{
+    
+    height: 70%;
+    
+
+}
+.first_footer>div:nth-child(3):hover label{
+    display: flex;
+}
+.first_footer>div:nth-child(3):hover input{
+    border: 7px solid grey;
+}
+.first_footer{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    
+}
+.first_footer button{
+    background-color: red;
+    width: 70%;
+    height: 4vh;
+}
+    
+    
+
+    
+
+.first_footer>p{
+    padding-bottom: 1em;
+}
+
+
+.lastfoot{
+    width: 100%;
+}
+.test>div:last-child{
+    
+}
+.me1,.me2{
+    width: 100%;
+    color: #fff;
+    padding: 4em;
+    
+}
+.me2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+}
+.sub{
+    background: red;
+    font-size: 34px;
+    border: 1px solid #000;
+}
+
+.test{
+  
+}
+.chat{
+    background-color: blue;
+    color:#fff;
+    font-size: 24px;
+    position: fixed;
+    right: 0;
+    height: 8vh;
+    width: fit-content;
+    bottom:0;
+    white-space: nowrap;
+    line-height: 2em;
+}

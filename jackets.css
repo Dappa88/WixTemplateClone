@@ -1,0 +1,636 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: gainsboro;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+
+
+.header_1{
+    color:red;
+    background: grey;
+    text-align: center;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    z-index: 20;
+    
+    
+}
+
+
+
+
+.header_1 p::after{
+    content:"WE SHIP WORLDWIDE" ;
+    animation: animate infinite 5s;
+}
+@keyframes animate{
+    0%{
+        content: "15% SHIPPING OFF ALL TENT";
+    }
+}
+.header_2{
+    
+   
+ 
+    background-color: white;
+    height: fit-content;
+    position: fixed;
+    
+    width: 100%;
+    top:5%;
+    z-index: 20;
+    box-shadow: 0 7px #E8E6E6;
+}
+.header_2>div{
+    margin-left: 2em;
+   
+    color: #fff;
+    font-size: 40px;
+    height: fit-content;
+    display: flex;
+    background: #fff;
+  
+    
+   
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    height: 10vh;
+    
+   
+    
+}
+.header_2>div{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+    
+}
+nav>ul{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+   
+    width: 40vw;
+
+}
+nav{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+    
+.header_2{
+    display: flex;
+    justify-content: space-between;
+}
+.login{
+    display: flex;
+    justify-content: space-between;
+}
+nav>ul>li:nth-child(2){
+    position: relative;
+}
+nav>ul>li:nth-child(2)>ul{
+    display: none;
+    position: absolute;
+    background: inherit;
+    color: gray;
+    flex-direction: column;
+    top: 1em;
+    white-space: nowrap;
+    padding: .5em;
+    
+}
+.login{
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.5em;
+    width: 4vw;
+}
+
+.box{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    
+}  
+.box p{
+
+    color: #fff;
+    position: absolute;
+    left: 30%;
+   
+    
+    
+    
+    
+}
+.box>div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    
+}
+nav>ul>li:nth-child(2):hover ul{
+   
+    background: #fff;
+    color: grey;
+    
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+nav>ul>li:nth-child(2)>ul>li:hover a{
+    cursor: pointer;
+    color: #000;
+}
+nav>ul>li:hover>a{
+    color: #000;
+}
+nav>ul>li span{
+    color: #000;
+    font-weight: bold;
+}
+.selling_cointainer{
+    margin-left: 5em;
+    margin-right: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7em;
+}
+.selling_cointainer>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    white-space: nowrap;
+    font-size: 40px;
+
+
+}
+
+.selling_cointainer>div:first-child div{
+    
+}
+.line{
+   
+    width: 50%;
+}
+.second_section>div{
+    margin-left: 5em;
+    margin-right: 5em;
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    
+    
+}
+.second_section1{
+    
+}
+.second_section1>div{
+    width: 10vw;
+}
+.second_section2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    grid-row-gap: 4em;
+    
+}
+.best_items{
+    position: relative;
+    background-image: url("image/coat.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    
+    
+}
+.button1{
+    position: absolute;
+    bottom: 0%;
+    left:0%;
+    width: 100%;
+    height: 10vh;
+    display: none;
+    background: purple;
+    padding-left:2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    font-size: 20px;
+    white-space: nowrap;
+    
+}
+.best_price{
+    position: relative;
+    
+    height: 12vh;
+    width: 50%;
+}
+.button2{
+    position: absolute;
+    bottom: 0%;
+    
+    width: 100%;
+    height: 50%;
+    background: red;
+    display: none;
+    padding-left: 1em;
+    padding-top: .5em;
+    font-size: 18px;
+    
+
+}
+.slider_cointainer{
+    width: 100%;
+    color: #000;
+   
+    
+}
+.slider_cointainer input{
+    width: 100%;
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coat1{
+    
+}
+.button1:hover{
+    cursor: pointer;
+}
+.button2:hover{
+    cursor: pointer;
+}
+
+.coat1:hover .best_items{
+    background-image: url("image/blue_coat.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+}
+.coat1:hover .button1{
+    display: flex;
+}
+.coat1:hover .button2{
+    display: flex;
+}
+.best_items>div:first-child{
+    background: red;
+    width: fit-content;
+    height: 4vh;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.coat1{
+    height: fit-content;
+}
+.sale_price{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.sale_price>p:first-child{
+    text-decoration: line-through;
+}
+.best_items2{
+    position: relative;
+    background-image: url("image/8th\ image.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    
+}
+
+.coat2:hover .button1{
+    display: grid;
+}
+.coat2:hover .button2{
+    display: grid;
+}
+.coat2:hover .best_items2{
+    background-image: url("image/8th\ image\ red\ -\ Copy.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+}
+.best_items2>div:first-child{
+    background: red;
+    width: fit-content;
+    height: 4vh;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.best_items3{
+    position: relative;
+    background-image: url("image/9th\ image\ -\ Copy.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    
+}
+
+.coat3:hover .button1{
+    display: grid;
+}
+.coat3:hover .button2{
+    display: grid;
+}
+.best_items3>div:first-child{
+    background: red;
+    width: fit-content;
+    height: 4vh;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.best_items4{
+    position: relative;
+    background-image: url("image/10th\ image\ -\ Copy.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    
+}
+
+.coat4:hover .button1{
+    display: grid;
+}
+.coat4:hover .button2{
+    display: grid;
+}
+
+.best_items5{
+    position: relative;
+    background-image: url("image/11th\ image\ -\ Copy.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    
+}
+
+.coat5:hover .button1{
+    display: grid;
+}
+.coat5:hover .button2{
+    display: grid;
+}
+
+.best_items6{
+    position: relative;
+    background-image: url("image/12th\ image\ -\ Copy.webp");
+    background-repeat: no-repeat;
+    
+    height:300px;
+    width: 300px;
+    background-size: cover;
+    
+}
+
+.coat6:hover .button1{
+    display: grid;
+}
+.coat6:hover .button2{
+    display: grid;
+}
+.second_section2 div:hover{
+    cursor: pointer;
+}
+footer{
+    background-image: url("image/footer_1.webp");
+    margin-top: 2em;
+    height: fit-content;
+    
+    background-repeat: no-repeat;
+    
+    
+    background-size: cover;
+    display: grid;
+    grid-row-gap: .09em;
+   
+    
+    
+   
+   
+    
+    
+    
+}
+footer>div>:first-child{
+    margin: 2em;
+}
+footer>div:last-child{
+    color: #fff;
+    
+    height: fit-content;
+    
+}
+footer>div:last-child p{
+    padding-left: 30%;
+    font-size: 24px;
+    
+}
+
+
+footer>div{
+   
+    
+   
+    
+    
+    
+    
+    
+    
+}
+
+.footer_cointainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+    height: fit-content;
+    width: 100%;
+
+    
+}
+.first_footer>p:first-child{
+    
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 24px;
+    
+    
+    
+    
+}
+.first_footer>div:nth-child(3){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: .5em;
+    
+}
+.lastfoot1{}
+
+.first_footer label{
+    position: absolute;
+    
+    bottom: 0%;
+    right: 0%;
+    width: fit-content;
+    background-color: #fff;
+    display: none;
+    color: #000;
+    
+
+}
+input[type=email]{
+    
+    height: 70%;
+    
+
+}
+.first_footer>div:nth-child(3):hover label{
+    display: flex;
+}
+.first_footer>div:nth-child(3):hover input{
+    border: 7px solid grey;
+}
+.first_footer{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+}
+.first_footer button{
+    background-color: red;
+    width: 70%;
+    height: 4vh;
+}
+    
+
+    
+    
+
+    
+
+.first_footer>p{
+    padding-bottom: 1em;
+}
+
+
+.lastfoot{
+    width: 100%;
+}
+.test>div:last-child{
+    ;
+}
+.me1,.me2{
+    width: 100%;
+    color: #fff;
+    padding: 4em;
+    
+}
+.me2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    b;
+    width: 100%;
+}
+.sub{
+    background: red;
+    font-size: 34px;
+    border: 1px solid #000;
+}
+
+.test{
+  
+}
+.chat{
+    background-color: blue;
+    color:#fff;
+    font-size: 24px;
+    position: fixed;
+    right: 0;
+    height: 8vh;
+    width: fit-content;
+    bottom:0;
+    white-space: nowrap;
+    line-height: 2em;
+}
